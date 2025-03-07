@@ -53,9 +53,7 @@ export default function IdDemo() {
           </div>
         </div>
         <div className="px-4 pt-4  md:border-t border-dark-100/50">
-          <Button onClick={onClose} block>
-            {t("dismiss")}
-          </Button>
+          <Button onClick={onClose}>{t("dismiss")}</Button>
         </div>
       </div>
     </Modal>

@@ -29,7 +29,6 @@ export function Modal({
   children,
   spacing = true,
   noDrawer = false,
-  hideCloseButton = false,
   persistent = false,
   open,
   onClose,
@@ -75,7 +74,6 @@ export function Modal({
         <Dialog open={open} onOpenChange={onClose}>
           <DialogContent
             onInteractOutside={(e) => persistent && e.preventDefault()}
-            hideCloseButton={hideCloseButton}
             className={modalStyle}
           >
             {title && (

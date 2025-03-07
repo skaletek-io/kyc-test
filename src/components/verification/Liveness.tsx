@@ -2,12 +2,12 @@ import VerificationContainer from "./VerificationContainer";
 import Arrow from "@/assets/icons/fancy-arrow.svg";
 
 import { useTranslation } from "react-i18next";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { useTokenStore } from "@/store";
 import { toast } from "react-toastify";
 import { createSession, getResult, verifyIdentity } from "@/hooks/useLiveness";
 import { redirectOnError } from "@/utils/redirect";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import Spinner from "../base/Spinner";
 import Progress from "../base/Progress";
 
@@ -24,8 +24,8 @@ interface Props {
   prevStep: () => void;
 }
 
-export default function Liveness({ prevStep }: Props) {
-  const navigate = useNavigate();
+export default function Liveness({}: Props) {
+  // const navigate = useNavigate();
   const { t } = useTranslation();
 
   const { sessionToken, resetState, primaryColor } = useTokenStore();

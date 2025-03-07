@@ -114,9 +114,7 @@ export default function DosAndDonts() {
           </div>
 
           <div className="md:hidden absolute bottom-4 left-0 w-full p-4 px-6 z-20">
-            <Button block onClick={onClose}>
-              {t("go_to_liveness")}
-            </Button>
+            <Button onClick={onClose}>{t("go_to_liveness")}</Button>
           </div>
 
           <div className="w-full h-full lg:w-10/12 xl:w-9/12 mx-auto space-y-4 md:pt-20 pb-16">
