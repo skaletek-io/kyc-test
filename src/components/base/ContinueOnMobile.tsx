@@ -22,8 +22,6 @@ export default function IdDemo() {
         </div>
         <Button
           onClick={() => setOpen(true)}
-          size="small"
-          variant="text"
           color="primary"
           className="underline flex-shrink-0    "
         >
@@ -44,7 +42,7 @@ export default function IdDemo() {
           </div>
 
           <div className="px-4 pt-4  md:border-t border-dark-100/50">
-            <Button color="white" onClick={onClose} block>
+            <Button color="white" onClick={onClose}>
               {t("dismiss")}
             </Button>
           </div>

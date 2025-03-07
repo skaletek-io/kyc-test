@@ -72,7 +72,7 @@ export default function QRCode() {
                 </div>
               </div>
               <div className="px-4 pt-4  md:border-t border-dark-100/50">
-                <Button color="white" onClick={onClose} block>
+                <Button color="white" onClick={onClose}>
                   {t("dismiss")}
                 </Button>
               </div>
