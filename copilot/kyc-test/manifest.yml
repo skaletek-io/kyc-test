@@ -1,0 +1,5 @@
+name: kyc-test
+type: Static Site
+files:
+  - source: dist
+    recursive: true
